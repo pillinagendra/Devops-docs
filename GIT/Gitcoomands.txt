@@ -3,7 +3,15 @@ GIT:
 git remote -v----to see the remote location
 Commands:
 =============
+Git checkout fil1---to undo the changes of work place
+git reset --soft Head: it discard the commit changes but it will keep in work & staging  upto staging dir upto git add will be there
+git reset --mixed Head~1:it discard the commit changes but it will keep only in workspace not in stage
+git reset --hard Head~1--it discard the commit changes and it will delete file  i all areas
+git revert comitid:edit comit message after :it deletes all places and it will give one more commit id
 
+Git Stash:
+-------
+ 
 
 
 Tag:
@@ -30,6 +38,9 @@ Merge:
 Merge we can see only files and extra commit
 Rebase--we can see files and commit messages with no extra commit
 git merge branch1
+git merge --squash branch1
+git rebase master
+always checkout to master and merge the files
 
 Error: 
 "fatal: unable to access 'https://github.com/hyperion057/spring-repo.git/': Could not resolve host: github.com"
